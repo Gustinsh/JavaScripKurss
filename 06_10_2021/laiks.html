@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+ <script>
+     function myFunction(){
+         test = "abc";
+         console.log (typeof test);
+        if (typeof test.replaceAlll === "function"){
+    console.log (typeof test.replaceAll);
+    console.log("Jā, replaceAll ir");
+ }
+ else{
+    console.log (typeof test.replaceAlll);   
+    console.log ("nē, replaceAlll funkcija konkrēti šiet nav.");}
+}
+</script>
+  
+<h2>My First JavaScript</h2>
+
+<!-- 
+    NB! new
+    04.10.2018 18:50
+-->
+
+<button type="button" 
+onclick="myFunction();
+    document.getElementById('demo1').innerHTML = new Date().getDate() + '.' + (new Date().getMonth()+ 1 ) + '.' + new Date().getFullYear();
+    document.getElementById('demo2').innerHTML = (new Date().toLocaleString('fi-FI', { timeZone: 'UTC' })).replace('klo', '').slice(0,-3).replaceAll('.', ':');">
+Click me to display Date and Time.
+
+</button>
+
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+</body>
+</html> 
