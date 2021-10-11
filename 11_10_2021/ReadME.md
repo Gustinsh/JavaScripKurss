@@ -1,1 +1,1 @@
-# Rakstīšu te
+# Github savienošana ar visal studio code
