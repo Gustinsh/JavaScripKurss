@@ -15,4 +15,13 @@ cars [ cars.length-1]
 ## [Masīvu  metodes](https://www.w3schools.com/js/js_array_methods.asp) noderīgas darbam ar masīviem
 -Simbolu rinda arī ir masīvs
 -masīvu palielināšana no beigām, push metode cars.push("Audi")
--cars.pop() tiek nogriezta (dzēsta) pēdējā vērtība.
+-cars.pop() tiek nogriezta (dzēsta) pēdējā vērtība. 
+-cars.splice (2,0, [value]); kur 2 kurā elementā ielikt; 0- cik izgriezt
+- masīvu papildināšana un apvienošana- .concat() netiek mainīts sākuma masīvs
+cars.slice (2,5)  2 nokopē vērtības no norādītās vērtības (ieskaitot) no otrās līdz 5(neieskaitot)(netiek izmantots sākuma vērtība)
+## [Masīvu  kārtošana](https://www.w3schools.com/js/js_array_sort.asp) noderīgas darbam ar masīviem
+-masīvu vērtību kārtošana - .sort() (tiek izmainīts pats masīvs ASCII koda secībā)
+-.reverse() pārkārtot otrādi
+-masīvu ar skaitļiem kārtošanai ir jāpievieno papildus konstrukcija (function(a, b){return a - b})
+min vērtības iegūšanai var izmantot sort() un [0] indeksu (vajadzības gadījumā izmantot masīva kopiju)
+max vērtības iegūšanai var izmantotsort() un [n-1] indeksu kur n ir masīva garums(vajadzības gadījumā izmantot masīva kopiju)

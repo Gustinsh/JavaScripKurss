@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="id3">JavaScript Arrays</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="error"></p>
+
+<script>
+try
+{
+const cars = [40, 100, 1, 5, 25, 10];
+//Saab","Volvo","BMW","VW","Fiat"];
+document.getElementById("demo1").innerHTML = cars;
+
+document.getElementById("demo2").innerHTML = cars.sort(function(a, b){return a - b})
+
+document.getElementById("demo3").innerHTML = cars; 
+}
+catch(err)
+{
+document.getElementById("error").innerHTML = err
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="id3">JavaScript Arrays</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="error"></p>
+
+<script>
+try
+{
+const cars = ["Saab","Volvo","BMW"];
+const cars_plus1 = ["Vw","Opel","Fiat"];
+const cars_plus2 = ["RAF","Seat","Kia"];
+const cars_full = cars.concat(cars_plus1,cars_plus2,"Yong");
+
+document.getElementById("demo1").innerHTML = cars + " masīva garums - " + cars.length;
+
+
+document.getElementById("demo2").innerHTML = cars_full + " masīva garums - " + cars_full.length;
+
+}
+catch(err)
+{
+document.getElementById("error").innerHTML = err
+}
+</script>
+
+</body>
+</html>
