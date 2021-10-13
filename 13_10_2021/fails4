@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2 id="id3">JavaScript Arrays</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="error"></p>
+
+    <script>
+        try {
+            const cars = ["Saab", "Volvo", "BMW"];
+            document.getElementById("demo1").innerHTML = cars;
+
+            let shifted_value = cars.shift();
+            document.getElementById("demo2").innerHTML = cars;
+            document.getElementById("demo3").innerHTML = "izgriesta vērtība- " + shifted_value;
+        }
+        catch (err) {
+            document.getElementById("error").innerHTML = err
+        }
+    </script>
+
+</body>
+
+</html>
