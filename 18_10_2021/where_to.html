@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        try {
+            document.getElementById("demo2").innerHTML = "Izdruka no iternal script";
+        }
+        catch (err) {
+            alert("kļūda no iternal script " + err);
+        }
+
+    </script>
+    <script src="JS/js_external_file.js"></script>
+</head>
+
+<body>
+   
+
+    <p id="demo1">demo1</p>
+    <p id="demo2">demo2</p>
+    <p id="demo3">demo3</p>
+    <p id="demo">A Paragraph.</p>
+    
+    <button type="button" onclick="myFunction()">Click Me</button>
+ <!-- <script>
+     function myFunction() {
+    document.getElementById("demo").innerHTML="Paragraph changed.";
+}
+        try {
+            document.getElementById("demo1").innerHTML = " izdruka no inline script ";
+
+        }
+        catch (err) {
+            alert("kļūda no inline script " + err);
+        }
+    </script> -->
+
+
+
+
+   
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+    <!-- <p id="error"></p> -->
+
+    <script src="JS/js_external_file.js"></script>
+</body>
+
+</html>
