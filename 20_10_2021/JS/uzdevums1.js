@@ -14,5 +14,5 @@ switch (document.getElementById("koks").value) {
     case "Bērzs":
       koks = "Bērzs";
       break;
-}
+}s
 document.getElementById("demo").innerHTML = "Tu izvēlējies " + koks;}
