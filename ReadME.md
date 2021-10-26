@@ -25,3 +25,4 @@ git config -global user.name "Gustinsh"
 vēsture:
 ![image](https://user-images.githubusercontent.com/92032530/136811137-6b02b41e-c52d-4615-b201-580d8c6abe69.png)
 
+widnows+"." = emoji izvēlēties
