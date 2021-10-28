@@ -3,3 +3,5 @@
 (ASCII tabula)[http://www.ecowin.org/ascii.htm]
 "mosh" stāsta par datubāzēm
 ctrl+ L- komentāri
+ctrl+ / - nokomentēt
+ctrl + k + c- noņemt komentāru

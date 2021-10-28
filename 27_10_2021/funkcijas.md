@@ -1,0 +1,1 @@
+* svarīga JS script secība
