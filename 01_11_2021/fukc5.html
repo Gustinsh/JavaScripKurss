@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function scope example</title>
+</head>
+<body>
+  <script>
+    let x = 1;
+     
+    function a() {
+      let y = 2;
+      x = x * y;
+      output(x);
+    
+    }
+    function b() {
+      let z = 3;
+      x = x * z;
+      output(x);
+    }
+    function output(value) {
+      const para = document.createElement('p'); //p = paragrāda taga, var būt arī 'button', tabulas,
+      document.body.appendChild(para);
+      para.textContent = 'Value: ' + value; // var .innerHTML vai .textContent
+      //return 1500;
+    }
+
+    let xx = output(x)
+    console.log(xx)
+    
+  </script>
+</body>
+</html>

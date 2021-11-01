@@ -2,10 +2,9 @@ const cars = ["Saab","Volvo","BMW","Audi"];
 document.getElementById("demo").innerHTML = cars;
 
 function beigas(){
-    var x = document.getElementById("myText").value;
+    let x = document.getElementById("myText").value;
     cars.push (x);
-
-document.getElementById("demo2").innerHTML = cars;
+    document.getElementById("demo2").innerHTML = cars;
 }
 
 function sakums(){

@@ -26,3 +26,4 @@ vēsture:
 ![image](https://user-images.githubusercontent.com/92032530/136811137-6b02b41e-c52d-4615-b201-580d8c6abe69.png)
 
 widnows+"." = emoji izvēlēties
+Divi scripti pēc kārtas- var atsaukties uz pirmā skripta nodefinētiem lielumiem
