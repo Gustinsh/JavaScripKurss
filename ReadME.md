@@ -27,3 +27,5 @@ vēsture:
 
 widnows+"." = emoji izvēlēties
 Divi scripti pēc kārtas- var atsaukties uz pirmā skripta nodefinētiem lielumiem
+
+SQlight!
