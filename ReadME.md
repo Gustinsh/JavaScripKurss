@@ -20,7 +20,7 @@ Nano- teksta redaktors
 ^O Write Out – save as
 Cat – atplūkot
 git config -global user.name "Gustinsh"
-
+replit.com- kur var kostot savus projektus
 [pievienot e-pastu gitbash](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address)
 vēsture:
 ![image](https://user-images.githubusercontent.com/92032530/136811137-6b02b41e-c52d-4615-b201-580d8c6abe69.png)
@@ -29,3 +29,10 @@ widnows+"." = emoji izvēlēties
 Divi scripti pēc kārtas- var atsaukties uz pirmā skripta nodefinētiem lielumiem
 
 SQlight!
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm
+
+#objekti
+* labāk veidot kā masīvu nevis ar indeksiem

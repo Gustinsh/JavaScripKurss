@@ -5,30 +5,52 @@ const seconds = document.getElementById('seconds');
 const countdown = document.getElementById('countdown');
 const year = document.getElementById('year');
 const loading = document.getElementById('loading');
-
+const year2 = document.getElementById('year2');
 const currentYear = new Date().getFullYear();
 
-const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
+//const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
+const myBirthDay =  new Date(`November 18 1990 07:00:00`);
 
 // Set background year
-year.innerText = currentYear + 1;
+//year.innerText = currentYear + 1;
 
 // Update countdown time
 function updateCountdown() {
   const currentTime = new Date();
-  const diff = newYearTime - currentTime;
+  const diff = currentTime - myBirthDay;
 
-  const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+  const y = Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25)
+  const d = Math.floor(diff / 1000 / 60 / 60 / 24 % 365.25);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
   const m = Math.floor(diff / 1000 / 60) % 60;
   const s = Math.floor(diff / 1000) % 60;
 
   // Add values to DOM
+  year2.innerHTML = y;
   days.innerHTML = d;
   hours.innerHTML = h < 10 ? '0' + h : h;
   minutes.innerHTML = m < 10 ? '0' + m : m;
   seconds.innerHTML = s < 10 ? '0' + s : s;
 }
+// function alive() {
+//   const currentTime = new Date();
+//   const diff = currentTime - myBirthDay;
+
+//   const y = Math.floor(diff / 1000 / 60 / 60 / 24 / 365);
+//   const d = Math.floor(diff / 1000 / 60 / 60 / 24) % 365;
+//   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+//   const m = Math.floor(diff / 1000 / 60) % 60;
+//   const s = Math.floor(diff / 1000) % 60;
+
+//   // Add values to DOM
+//   year.innerHTML = y;
+//   days.innerHTML = d;
+//   hours.innerHTML = h < 10 ? '0' + h : h;
+//   minutes.innerHTML = m < 10 ? '0' + m : m;
+//   seconds.innerHTML = s < 10 ? '0' + s : s;
+// }
+
+
 
 // Show spinner before countdown
 setTimeout(() => {
@@ -38,3 +60,4 @@ setTimeout(() => {
 
 // Run every second
 setInterval(updateCountdown, 1000);
+//setInterval(alive, 1000);

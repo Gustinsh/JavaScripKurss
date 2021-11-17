@@ -25,3 +25,31 @@ cars.slice (2,5)  2 nokopē vērtības no norādītās vērtības (ieskaitot) no
 -masīvu ar skaitļiem kārtošanai ir jāpievieno papildus konstrukcija (function(a, b){return a - b})
 min vērtības iegūšanai var izmantot sort() un [0] indeksu (vajadzības gadījumā izmantot masīva kopiju)
 max vērtības iegūšanai var izmantotsort() un [n-1] indeksu kur n ir masīva garums(vajadzības gadījumā izmantot masīva kopiju)
+### Javascript objekti.
+[izmēģināts un tulkots no](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
+#### Objektu izveidošana
+-declaring an object literal ("tiešā" piešķiršana)  
+```
+const object_name = {}; //pazīme - {} iekavās
+```
+-Using constructor function (izmantojot konstruktora funkciju);
+-"gari"(ar iekšējo tukšu objektu)
+```
+function createNewObject ( ... ){ ... }
+const object name = createNewObject( ... );
+```
+-"īsi" (bez iekšējā tukšā objekta, bet izmantojot atslēgas vārdu)
+
+```new```; **NB!** ir izmainīta - papildināta standarta
+``` constructor``` funkcija)
+
+function NewObject( ... ){ ... }
+const object_name = new NewObject( ... );
+
+- standarta objekta konstruktors
+``` const object_name = new object()```
+-using the create() method (kā prototipu izmantojot kādu jau esošo objektu)
+```
+let new_object_name = Object.create(object_name)
+```
+
