@@ -1,0 +1,1 @@
+```alert()```brīdinājums, ko parāda lietotājam, 
