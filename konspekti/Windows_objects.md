@@ -16,3 +16,5 @@ Ja tiek pievienoti izmēri, atvērsies jauna pārlūkprogramma ar saturu, ja nav
    ```jsWindow.close()``` izmanto lai aizvērtu logu
 
    ```window.opener ``` izmanto lai izmantotu datus un apmainītos no vecā widnows/taba loga
+
+   ```noopener``` - bērna tabam pazūd kontrole
