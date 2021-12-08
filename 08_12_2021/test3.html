@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript getElementsByName Demo</title>
+</head>
+<body>
+    <p>Please rate the service:</p> 
+    <p id="radioList">
+        <input type="radio" class="poor" name="rate" value="Very poor"> Very poor
+        <input type="radio" class="poor" name="rate" value="Poor"> Poor
+        <input type="radio" class="ok" name="rate" value="OK"> OK
+        <input type="radio" class="ok good" name="rate" value="Good"> Good
+        <input type="radio" class="ok good" name="rate" value="Very Good"> Very Good
+    </p>
+    <p>
+    <button id="btnInputCount">Count inputs</button>
+</p>
+    <!-- <p>
+        <button id="btnRate">Submit</button>
+    </p> -->
+    <script>
+        let btnInputCount = document.getElementById('btnInputCount');
+
+        btnInputCount.addEventListener('click', () => {
+            let inputs = document.getElementsByTagName('input');
+                    alert(`number of input tag: ${inputs.length}`);
+                }
+            );
+    //     let rates = document.getElementsByName(`rate`);
+
+    //     rates.forEach((rate) => { rate.addEventListener(`click`, () => {
+    //         let rates = document.getElementsByName(`rate`);
+    //         rates.forEach((rate) => {
+    //             if (rate.checked) {
+    //                 alert(`You rated: ${rate.value}`);
+    //             }   
+    //         })
+    //     });});
+    // 
+
+let radioList = document.getElementById('radioList');
+
+let radioOK = radioList.getElementsByClassName('ok');
+let dataOK = [].map.call(radioOK, item => item.value);
+console.log(dataOK);
+
+let radioGood = radioList.getElementsByClassName('good');
+let dataGood = [].map.call(radioGood, item => item.value);
+console.log(dataGood);
+    
+    </script>
+</body>
+</html>

@@ -13,17 +13,28 @@
     }
 
     function stop() {
+      console.log(intervalID);
       clearInterval(intervalID);
     }
 
     function start() {
        intervalID = setInterval(toggleColor, 1000); 
+       console.log(intervalID);
     }
 
-    setTimeout(() => {
-    location.assign('https://www.javascripttutorial.net');
-}, 3000);
+//     setTimeout(() => {
+//     location.assign('https://www.javascripttutorial.net');
+//  }, 3000);
+function onFulfilled(bookmarks) {
+  console.log(bookmarks);
+}
 
+function onRejected(error) {
+  console.log(`An error: ${error}`);
+}
+
+var gettingBookmarks = chrome.bookmarks.get("Dialogs AB");
+gettingBookmarks.then(onFulfilled, onRejected);
   </script>
 </head>
  
