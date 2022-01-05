@@ -5,3 +5,7 @@
 ctrl+ L- komentāri
 ctrl+ / - nokomentēt
 ctrl + k + c- noņemt komentāru
+py4e.com/lessons - super resurss pyton apgūšanai
+
++= - papildināšana
+```${i}``` vērtību piešķiršana

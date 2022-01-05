@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div class= "container"></div>
+
+    <script>
+      let div = document.querySelector(`.container`);
+
+      // for (let i = 0; i < 1000; i++) {
+      //   let p = document.createElement("p");
+      //   p.textContent = `Paragraph ${i}`;
+      //   div.appendChild(p);        //šis paņēmiens aizņem 5 ms
+      // }
+      //for (let i = 0; i < 1000; i++) {
+      //div.innerHTML +=`<p>Paragraph ${i}</p>`; // šis paņēmiens aizņem 1000 milisekundas
+      // div.innerHTML +=`<p>Paragraph ` +i+ `</p>`;
+      // }
+    //   let fragment = document.createDocumentFragment();
+    //   for (let i = 0; i < 1000; i++) {
+    //     let p = document.createElement('p');
+    //     p.textContent = `Paragraph ${i}`;
+    //     fragment.appendChild(p);
+    //   }
+
+      // append the fragment to the DOM tree
+      //div.appendChild(fragment);
+
+      let paragraphNr = [0, 1, 2]
+      let nodes = paragraphNr.map (Nr =>{
+          let p = document.createElement('p');
+          p.textContent = `Paragraph ${Nr}`;
+          return p;
+      });
+     div.append(...nodes);
+    </script>
+  </body>
+</html>

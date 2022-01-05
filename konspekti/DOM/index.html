@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS Get Child Elements</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li class="first">Home</li>
+      <li>Products</li>
+      <li class="current">Customer Support</li>
+      <li>Careers</li>
+      <li>Investors</li>
+      <li>News</li>
+      <li class="last">About Us</li>
+    </ul>
+
+    <script>
+      //   let current = document.querySelector(`.current`);
+      //   console.log(current.parentNode);
+      //   let siblingsOfCurrent = getsiblings(current);
+      //   let menu = document.getElementById(`menu`);
+      //   let children = menu.children;
+      //   console.log(children)
+
+      //       function getSiblings(e){
+      //           let siblings= [];
+      //           if (!e.parentNode);
+      //           return siblings;
+      //       }
+      //       let sibling = e.parentNode.firstChild;
+      //        while (sibilng) {
+      //            if (sibling.nodetype === 1&& sibling !== e){
+      //                sibling = sibling.nextSibling;
+      //            }
+      // return siblings;
+      //        }
+      //let children = parentElement.childNodes;
+      // let children = parentElement.children;
+      const menuu = document.querySelector("#menu");
+      let li = document.createElement("li");
+      let text1 = document.createTextNode("Productsssss");
+      li.appendChild(text1);
+      menuu.appendChild(li);
+
+      li = document.createElement("li");
+      li.textContent = "About Usssss";
+
+      // select the ul menu element
+      menu.appendChild(li);
+
+      let script = document.createElement("script");
+      script.textContent = `loadJS(\`JS/main.js\`);`;
+      document.body.appendChild(script);
+
+      function loadJS(url) {
+        let script = document.createElement("script");
+        script.src = url;
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
